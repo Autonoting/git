@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="font-weight: 300; font-size: 20px; line-height: 30px; background-color: rgb(7, 6, 14); color: rgb(243, 239, 239);">
+  <h1 class="top__header" style="text-align: center;">Основные команды для работы с github</h1>
+  <div class="text__wrap" style="max-width: 1200px; margin: 0 auto; border: rgb(37, 34, 34) solid 4px;">
+    <br><br>
+    <a href="http://rightblog.ru/3274" style="text-decoration: none; color:rgb(236, 120, 120)" target="_blank">Основные команды консоли Git Bash 24</a>
+    <hr> git status -узнать текущий статус репозитория
+    <hr> git log - узнать о всех коммитах
+    <hr> git branch - ветка
+    <hr> HEAD^^ или HEAD~2 перемещение указателя HEAD
+    <hr><br><br> git mkdir forExampleNameDir - создать папку, необходимо написать ее название
+    <hr> git init - Инициализировать git в папке, делается первый раз, создается скрытая папка .git
+    <hr><br><br> git add . - Подготовили файлы к фиксации
+    <hr> git commit -m - Фиксируем ранее подготовленные файлы
+    <br> git commit -m "Add name commit" - комит, действие пишется в настоящем времени Add
+    <hr>
+    <h3 style="text-align: center;">git diff</h3>
+    <br> git diff - Покажет ращницу между текущим НЕОТСЛЕЖИВАЕМЫМ состоянием репозитория и последним снимком репозитория.
+    <br> git diff -- staged - Покажет ращницу между текущим ОТСЛЕЖИВАЕМЫМ состоянием репозитория и последним снимком репозитория.
+    <br> git diff -- COMMIT_ID - Покажет ращницу между текущим состоянием репозитория и УКАЗАННЫМ снимком репозитория.
+
+    <h3 style="text-align: center;">git reset</h3>
+    <br> Команда используется для переписывания истории
+    <br> git reset --soft возвращает проект к указанному коммиту, при этом переводит все коммиты после указанного в ОТСЛЕЖИВАЕМУЮ ЗОНУ
+    <br> git reset -- mixed возвращает проект к указанному коммиту, при этом переводит все коммиты после указанного в НЕОТСЛЕЖИВАЕМУЮ зону
+    <br> git reset -- hard врзвращает проект к указанному коммиту, при этом полностю улаояет все коммиты прсое указанного. УДАЛЯЕТ КОММИТЫ БЕЗВОЗВРАТНО!!!
+
+
+    <h3 style="text-align: center;">git checkout</h3>
+    <br> Используется для перемещения между коммитами, версиями отдельных фалов, ветками.
+    <br> git checkout master - возврат на последнюю версию.
+    <br> git checkout adslnb49uhva9etrovn34us03ffafn944b9494 -- file1 file2
+
+
+    <hr> merge on guthubF.Ex. git remote add origin git@github.com:Autonoting/Test.git
+    <hr> merge on choosen site of github git push -u origin main
+
+
+
+  </div>
+
+</body>
+
+</html>
