@@ -15,6 +15,7 @@
     <a href="http://rightblog.ru/3274" style="text-decoration: none; color:rgb(236, 120, 120)" target="_blank">Основные команды консоли Git Bash 24</a>
     <hr> git status -узнать текущий статус репозитория
     <hr> git log - узнать о всех коммитах
+    <hr> git remote -v - узнать какие origin (Для СОЗДАНИЯ  git remote add) (Для удаления git remote remove)
     <hr> git branch - ветка
     <hr> HEAD^^ или HEAD~2 перемещение указателя HEAD
     <hr><br><br> git mkdir forExampleNameDir - создать папку, необходимо написать ее название
@@ -36,19 +37,31 @@
 
 
     <h3 style="text-align: center;">git checkout</h3>
-    <br> Используется для перемещения между коммитами, версиями отдельных фалов, ветками.
+    <br> Используется для перемещения между коммитами, версиями отдельных фалов, ветками, если мы хотим посмотреть как выглядел проект в каком-то снимке в прошлом. Коммиты не удалятся. Все мзенения не сохраняются (Удаляются сборщиком мусора).
     <br> git checkout master - возврат на последнюю версию.
     <br> git checkout adslnb49uhva9etrovn34us03ffafn944b9494 -- file1 file2
-
-
-    <hr> merge on guthubF.Ex. git remote add origin git@github.com:Autonoting/Test.git
-    <hr> merge on choosen site of github git push -u origin main
+    <hr>
+    <h3 style="text-align: center;">git commit</h3>
+    <br> можно пользоваться командой: git commit -a -m то можно не прописывать git add. НО ПРИ ДАННОЙ КОМАНДЕ НЕ ЗАПИШУТСЯ UNTRACKED файлы.
+    <br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    <br>
+    <h3 style="text-align: center;">git commit --ammend -m</h3>
+    <br> Дополняет последний коммит, добавляя в него свежие изменения. Таже мнеяет сообщение последнего коммита. Новй коммит не создается, перепичывается "новый коммит".
+    <hr>
+    <h3 style="text-align: center;">git clean</h3>
+    <br> Удаляет UNTAKT файлы. По этому для начала нужно прописать команду:
+    <br> git clean -n Данная команда покажет, что при git clean удалится
+    <br> git clean -f Уалит изменения связанные с untract файлов.
+    <hr>
+    <!-- <hr> merge on guthubF.Ex. git remote add origin git@github.com:Autonoting/Test.git
+    <hr> merge on choosen site of github git push -u origin main -->
     <h3 style="text-align: center;">git commit</h3>
     <br> git commit -m "text"
     <h3 style="text-align: center;">git push</h3>
     <br> git push origin -u master
     <h3 style="text-align: center;">git pull</h3>
     <br> git pull origin main
+    <hr>
 
   </div>
 
