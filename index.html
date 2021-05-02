@@ -8,32 +8,41 @@
   <title>Document</title>
 </head>
 
-<body style="font-weight: 300; font-size: 20px; line-height: 30px; background-color: rgb(7, 6, 14); color: rgb(243, 239, 239);">
+<body style="font-weight: 300; font-size: 23px; line-height: 48px; background-color: rgb(8, 11, 19); color: rgba(202, 196, 163, 0.863);">
   <h1 class="top__header" style="text-align: center;">Основные команды для работы с github</h1>
-  <div class="text__wrap" style="max-width: 1200px; margin: 0 auto; border: rgb(37, 34, 34) solid 4px;">
+  <div class="text__wrap" style="max-width: 1200px; margin: 0 auto; border: rgba(51, 56, 45, 0.795) solid 4px;">
     <br><br>
     <a href="http://rightblog.ru/3274" style="text-decoration: none; color:rgb(236, 120, 120)" target="_blank">Основные команды консоли Git Bash 24</a>
+    <hr>
+    <h3 style="text-align: center;">Основные оснОвные комманды</h3>
+    <hr> git add . - добавить неотслеживаемые изменения.
+    <br> git commit -m "add something" - фиксация изменений
+    <br> git commit <b>-a -m</b> то можно не прописывать git add. НО ПРИ ДАННОЙ КОМАНДЕ НЕ ЗАПИШУТСЯ UNTRACKED файлы.
+    <br> git push origin master - отправить на уделенный репозиторий
     <hr> git status -узнать текущий статус репозитория
-    <hr> git log - узнать о всех коммитах
-    <hr> git remote -v - узнать какие origin (Для СОЗДАНИЯ git remote add) (Для удаления git remote remove)
-    <hr> git branch - ветка
-    <hr> HEAD^^ или HEAD~2 перемещение указателя HEAD
-    <hr><br><br> git mkdir forExampleNameDir - создать папку, необходимо написать ее название
-    <hr> git init - Инициализировать git в папке, делается первый раз, создается скрытая папка .git
-    <hr><br><br> git add . - Подготовили файлы к фиксации
-    <hr> git commit -m - Фиксируем ранее подготовленные файлы
-    <br> git commit -m "Add name commit" - комит, действие пишется в настоящем времени Add
+    <br> git log - узнать о всех коммитах
+    <br> git remote -v - узнать какие origin (Для СОЗДАНИЯ git remote add origin https//yourlinck.ru) (Для удаления git remote remove origin)
+    <br> git branch - на какой ветке мы находимся (+ NAME_BRANCH - переход на указанную ветку) (+ - d удалить ветку в локальном репозитории) (+ - D удалитьветку в улаоенном репозитории)
+    <hr> git mkdir forExampleNameDir - создать папку, необходимо написать ее название
+    <br> git init - Инициализировать git в папке, делается первый раз, создается скрытая папка .git
+    <hr> HEAD^^ или HEAD~2 перемещение указателя HEAD или хеш: alkn54fag2aefh2ns5jy2s5htrfgjd256dxgfhsn25 (хеш генерируется гитом самостоятельно)
+    <hr>
+    <hr>
+    <h3 style="text-align: center;">Основные команды</h3>
+    <hr>
+    <hr>
+    <hr>
     <hr>
     <h3 style="text-align: center;">git diff</h3>
-    <br> git diff - Покажет ращницу между текущим НЕОТСЛЕЖИВАЕМЫМ состоянием репозитория и последним снимком репозитория.
-    <br> git diff -- staged - Покажет ращницу между текущим ОТСЛЕЖИВАЕМЫМ состоянием репозитория и последним снимком репозитория.
-    <br> git diff -- COMMIT_ID - Покажет ращницу между текущим состоянием репозитория и УКАЗАННЫМ снимком репозитория.
+    <br> git diff - Покажет ращницу между ТЕКУЩИМ НЕОТСЛЕЖИВАЕМЫМ состоянием репозитория и последним снимком репозитория.
+    <br> git diff -- staged - Покажет ращницу между ТЕКЩИМ ОТСЛЕЖИВАЕМЫМ состоянием репозитория и последним снимком репозитория.
+    <br> git diff sfgsb35sfgh15dfgs354av1f - (COMMIT_ID) Покажет ращницу между ТЕКУЩИМ состоянием репозитория и УКАЗАННЫМ снимком репозитория.
 
     <h3 style="text-align: center;">git reset</h3>
     <br> Команда используется для переписывания истории
     <br> git reset --soft возвращает проект к указанному коммиту, при этом переводит все коммиты после указанного в ОТСЛЕЖИВАЕМУЮ ЗОНУ
-    <br> git reset -- mixed возвращает проект к указанному коммиту, при этом переводит все коммиты после указанного в НЕОТСЛЕЖИВАЕМУЮ зону
-    <br> git reset -- hard врзвращает проект к указанному коммиту, при этом полностю улаояет все коммиты прсое указанного. УДАЛЯЕТ КОММИТЫ БЕЗВОЗВРАТНО!!!
+    <br> git reset --mixed возвращает проект к указанному коммиту, при этом переводит все коммиты после указанного в НЕОТСЛЕЖИВАЕМУЮ зону
+    <br> git reset --hard врзвращает проект к указанному коммиту, при этом полностю улаояет все коммиты прсое указанного. УДАЛЯЕТ КОММИТЫ БЕЗВОЗВРАТНО!!!
 
 
     <h3 style="text-align: center;">git checkout</h3>
@@ -42,15 +51,13 @@
     <br> git checkout adslnb49uhva9etrovn34us03ffafn944b9494 -- file1 file2
     <br> git checkout название ветки, позволит переместиться на другую ветку.
     <hr>
-    <h3 style="text-align: center;">git commit</h3>
-    <br> можно пользоваться командой: git commit -a -m то можно не прописывать git add. НО ПРИ ДАННОЙ КОМАНДЕ НЕ ЗАПИШУТСЯ UNTRACKED файлы.
     <div style="text-align: center;">+</div>
     <br>
     <h3 style="text-align: center;">git commit --ammend -m</h3>
     <br> Дополняет последний коммит, добавляя в него свежие изменения. Таже мнеяет сообщение последнего коммита. Новй коммит не создается, перепичывается "новый коммит".
     <hr>
     <h3 style="text-align: center;">git clean</h3>
-    <br> Удаляет UNTAKT файлы. По этому для начала нужно прописать команду:
+    <br> Удаляет UNTRAKT файлы. По этому для начала нужно прописать команду:
     <br> git clean -n Данная команда покажет, что при git clean удалится
     <br> git clean -f Уалит изменения связанные с untract файлов.
     <hr>
